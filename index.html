@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="174779955634-v4uq6sfcnb03jjvgbuuaeoe623vmq6nn.apps.googleusercontent.com">
+    <title>Padot</title>
+    <link rel="shortcut icon" href="./p.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/MASTER0811/write_simple.css/style.css">
+</head>
+<body class="bd_w bd_h allct">
+    <h1>Padot Home</h1>
+
+    <div class="sign-box">
+        <div class="g-signin2" data-onsuccess="onSignIn">Sign In</div>
+        <div class="log-box">
+            <div class="img">
+                <img src="./blank-user.png" id="profile-img">
+            </div>
+            <div class="name">
+                <span id="profile-info">User</span>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="./app.js"></script>
+</body>
+</html>
