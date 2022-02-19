@@ -13,39 +13,5 @@
 </head>
 <body class="bd_w bd_h allct">
     <h1>Padot Home</h1>
-
-    <div class="sign-box">
-        <div class="g-signin2" data-onsuccess="onSignIn"></div>
-        <div class="log-box">
-            <div class="img">
-                <img src="./blank-user.png" id="profile-img">
-            </div>
-            <div class="name">
-                <span id="profile-info">User</span>
-            </div>
-        </div>
-    </div>
-
-
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script>
-        let img = document.querySelector("#profile-img")
-        let nameprofile = document.querySelector("#profile-info")
-
-
-        function onSignIn(googleUser) {
-            var profile = googleUser.getBasicProfile();
-            img.src = profile.getImageUrl();
-            nameprofile.innerHTML = profile.getName();
-        }
-
-        function onSignIn(googleUser) {
-            var profile = googleUser.getBasicProfile();
-            console.log('ID: ' + profile.getId());
-            console.log('Name: ' + profile.getName());
-            console.log('Image URL: ' + profile.getImageUrl());
-            console.log('Email: ' + profile.getEmail()); 
-        }
-    </script>
 </body>
 </html>
