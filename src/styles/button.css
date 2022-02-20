@@ -1,0 +1,21 @@
+:root{
+    --this-background: #4285f4;
+    --this-color:#fff;
+    --this-padding: 0.5em 1.4em;
+    --this-border: 0;
+    --this-outline: none;
+    --this-border-radius: 3px;
+    --this-font-size: 15px;
+    --this-font-weight:600;
+    --this-font-family: 'Poppins', sans-serif;
+    --this-cursor: pointer;
+    --this-transition: .5s ease-in-out;
+    --this-position: relative;
+    --this-box-shadow: rgba(100, 100, 111, 0.25) 0px 7px 29px 0px;
+
+    --this-hover-transform: translateY(-.5px);
+    --this-hover-box-shadow:rgba(100, 100, 111, 0.6) 0px 7px 29px 0px;
+
+    --this-active-background:#4286f4e7;
+    --this-active-opacity: .8;
+}
