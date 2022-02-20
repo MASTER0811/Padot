@@ -5,7 +5,7 @@ let signButton = document.getElementById("SignButton"),
 let userImg = document.querySelector(".user-profile"),
     userName = document.querySelector(".user-name")
 
-let signBorder = document.querySelector(".sign"),
+let signBorder = document.querySelector(".g-signin2"),
     signOut = document.querySelector(".signOut")
 
 signButton.onclick = () => {
