@@ -164,35 +164,26 @@ header.header{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     padding: 0 15px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-40%);
 }
-.signOut{
-    position: relative;
-    width: 100%;
-    height: 80%;
-
+#signborder{
     display: none;
+}
+.ws-btn{
+    display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-around;
+    width: 155px;
 }
-.signOut img{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    pointer-events: none;
-    user-select: none;
+
+#signButton{
+    margin-bottom: 20px;
 }
-.signOut p{
-    margin: 5px 0;
-    font-size: 16px;
-    user-select: none;
-    color: #333;
-}
-.signOut .ws-btn{
-    margin-top: 5px;
+#signOutButton{
+    visibility: hidden;
 }
