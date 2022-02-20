@@ -21,8 +21,8 @@
     console.log(element.id);
     auth2.attachClickHandler(element, {},
         function(googleUser) {
-          document.getElementById('name').innerText = "Signed in: " +
-              googleUser.getBasicProfile().getName();
+          document.getElementById('name').innerText = "Signed in: " + googleUser.getBasicProfile().getName();
+          document.querySelector("img").src = googleUser.getBasicProfile().getImageUrl();
         }, function(error) {
           alert(JSON.stringify(error, undefined, 2));
         });
@@ -86,6 +86,8 @@
   <button type="button" class="ws-btn" id="signOutButton" onclick="signOutBtn()"> 
     Log Out
 </button>
+
+<img src="" alt="">
   <script>startApp();
 
   </script>
