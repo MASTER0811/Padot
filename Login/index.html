@@ -27,6 +27,13 @@
           alert(JSON.stringify(error, undefined, 2));
         });
   }
+
+  function signOutBtn() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      alert('Sign out successful')
+    })
+  }
   </script>
   <style type="text/css">
     #customBtn {
@@ -80,12 +87,7 @@
     Log Out
 </button>
   <script>startApp();
-  function signOutBtn() {
-    var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut().then(function () {
-      alert('Sign out successful')
-    })
-  }
+
   </script>
   
 </body>
