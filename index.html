@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="682387452781-glkki68g8eo6mst765edu5pn0uo5heg9.apps.googleusercontent.com">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/MASTER0811/Padot/main/p.png" type="image/x-icon">
+    <title>Workplace</title>
+
+    <!-- ---------------------------- css ---------------------------- -->
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/all.css">
+    <link rel="stylesheet" href="./src/styles/fonts.css">
+    <link rel="stylesheet" href="./src/styles/button.css">
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/MASTER0811/write_simple.css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MASTER0811/button-var-css/main.css">
+</head>
+<body class="bd_w bd_h">
+    <header class="header">
+        <div class="web-logo">
+            <span class="logo">Padot.</span>
+        </div>
+        <div class="list">
+            <nav>
+                <ul>
+                    <li><a href="">Home <ion-icon name="home"></ion-icon></a></li>
+                    <li><a href="">About <ion-icon name="help-circle"></ion-icon></a></li>
+                    <li><a href="">Project <ion-icon name="document"></ion-icon></a></li>
+                    <li><a href="">Footer <ion-icon name="footsteps"></ion-icon></a></li>
+                    <li><a href="">Github <ion-icon name="logo-github"></ion-icon></a></li>
+                </ul>
+            </nav>
+            <div class="signOption">
+                <button type="button" id="SignButton">
+                    <span id="textChange">Log In</span>
+                    <ion-icon name="log-in-outline" class="logButton"></ion-icon>
+                </button>
+            </div>
+        </div>
+        
+    </header>
+    <section class="homePage ">
+        <div class="left-box">
+            <h1>Home<br>Page</h1>
+        </div>
+        <div class="right-box">
+            <div class="profile">
+                <img src="./src/Images/user.jpg" alt="profile-picture">
+                <div class="profile-info">
+                    <span class="user-name">MASTER0811</span>
+                    <div class="time">
+                        <h3>Use Github On: </h3>
+                        <span>06-2022</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Login Section -->
+    <section class="login-container">
+        <div class="title-box">
+            <h1>Google Sign</h1>
+            <ion-icon name="close-circle-outline" class="closeButton"></ion-icon>
+        </div>
+        <div class="signOut">
+            <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user-profile" class="user-profile">
+            <p class="user-name">User</p>
+            <button type="button" class="ws-btn" onclick="signOutBtn()">Log Out</button>
+        </div>
+        <div class="sign">
+            <div class="g-signin2" data-width="250" data-height="40" data-longtitle="Sign In Here" data-theme="light">
+        </div>
+
+    </section>
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <script src="./src/Javascript/main.js"></script>
+    <script src="./src/Javascript/sign.js"></script>
+
+</body>
+</html>
