@@ -31,7 +31,7 @@
   function signOutBtn() {
     var auth2 = gapi.auth2.getAuthInstance();
     auth2.signOut().then(function () {
-      alert('Sign out successful')
+      document.getElementById('name').innerHTML = "Sign Out successfully"
     })
   }
   </script>
