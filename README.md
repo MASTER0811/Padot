@@ -1,3 +1,4 @@
 # Padot
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b9260823-c182-4e76-8400-c6a7416fae5e/deploy-status)](https://app.netlify.com/sites/padot/deploys)
+![example workflow](https://github.com/<OWNER>/<REPOSITORY>/actions/workflows/<WORKFLOW_FILE>/badge.svg)
