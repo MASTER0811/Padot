@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <meta http-equiv="refresh" content="1; url=./github.html"> -->
+    <link rel="stylesheet" href="./src/styles/github-page.css">
+    <link rel="stylesheet" href="./src/styles/fonts/poppins.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/all.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/MASTER0811/write_simple.css/style.css">
+</head>
+<body class="bg_lightblue allct">
+    <div class="container">
+        <div class="logo allct">
+            <img src="./src/Images/github.svg" alt="github-svg">
+        </div>
+        <div class="text allct">
+            <h1>Waiting For <span></span> Seconds</h1>
+            <span>Running to <a href="#">Github Page</a></span>
+        </div>
+    </div>
+    <script>
+        let num = document.querySelector("span")
+        let count = 3
+
+        setInterval(function(){
+            if(count <= 0){
+                window.location.replace("https://github.com/MASTER0811")
+            }else{
+                num.innerHTML = `${count}`
+            }
+            count -= 1;
+        },1000)
+
+        // setTimeout(function(){
+        //    
+        // },3000)
+    </script>
+</body>
+</html>
