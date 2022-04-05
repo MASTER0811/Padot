@@ -1,0 +1,83 @@
+.scroll-indicator-controller {
+    position: fixed;
+    top: 50vh;
+    transform: translate(0, -50%);
+    right: 10px;
+    z-index: 999;
+}
+.scroll-indicator-controller.indi-mobile > div span {
+    display: none;
+}
+@media (min-width: 1025px) {
+    .scroll-indicator-controller {
+        right: 20px;
+    }
+}
+.scroll-indicator-controller > div {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border-radius: 50%;
+    border: 1px solid whitesmoke;
+    background: rgba(0, 0, 0, 0.25);
+    margin: 0 0 10px 0;
+    cursor: pointer;
+    transition: background 0.4s ease;
+    will-change: transition;
+}
+.scroll-indicator-controller > div:active{
+    transform: scale(1.05);
+}
+.scroll-indicator-controller > div span {
+    color: #95a0ef;
+    position: absolute;
+    right: calc(100% + 8px);
+    white-space: nowrap;
+    top: 50%;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    line-height: 17px;
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-50%) translateX(10px);
+    transition: all 0.4s ease;
+    will-change: transition;
+    font-weight: 600;
+    user-select: none;
+    pointer-events: none;
+}
+@media (hover: none) {
+    .scroll-indicator-controller > div span {
+        display: none;
+    }
+}
+.scroll-indicator-controller > div span:after {
+    content: "-----";
+    padding-left: 5px;
+    letter-spacing: -2px;
+    font-family: arial, sans-serif;
+    vertical-align: bottom;
+    line-height: 16px;
+}
+@media (hover: hover), (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .scroll-indicator-controller > div:hover span {
+        width: auto;
+        opacity: 1;
+        overflow: visible;
+        transform: translateY(-50%) translateX(0px);
+    }
+}
+.scroll-indicator-controller > div.active {
+    background: #fff;
+    border-color: rgba(0, 0, 0, 0.64);
+}
+@supports (-ms-ime-align:auto) {
+    .scroll-indicator-controller > div span {
+        transition: opacity 0.4s ease;
+    }
+}
+.scroll-indicator-controller > div.active{
+    border-color: transparent;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
