@@ -1,0 +1,24 @@
+:root{
+    --scroll-bar-track-background:#ffffff;
+}
+.web-dark-mode{
+    --scroll-bar-track-background:#252525;
+}
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: var(--scroll-bar-track-background);
+    transition: 0.5s ease-in-out;
+}
+::-webkit-scrollbar-thumb {
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 55px;
+    background-color: #8ab4f8;
+}
