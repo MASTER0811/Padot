@@ -1,0 +1,103 @@
+atropos-component {
+    display: block;
+  }
+atropos-component .atropos-inner {
+  border-radius: 0.8em;
+  box-shadow: none;
+}
+atropos-component .atropos-shadow {
+  filter: blur(50px);
+  opacity: .25;
+}
+atropos-component .atropos-active .atropos-shadow {
+  opacity: 1;
+}
+
+:root{
+  --terminal-header:#cccccc;
+  --terminal-main:#e5e5e5;
+  --terminal-money-text:#606368;
+  --carat-color:#333;
+}
+.web-dark-mode{
+  --terminal-header:#333333;
+  --terminal-main:#0c0c0c;
+  --terminal-money-text:#cccccc;
+  --carat-color:#fff;
+}
+
+.terminal{
+    width: 850px;
+    height:500px;
+    position: relative;
+    background: var(--terminal-main);
+    overflow: hidden;
+    border-radius: 0.8em;
+}
+.terminal-head{
+    background-color:var(--terminal-header) ;
+    width:100%;
+    height: 40px;
+    border-top-left-radius: .8em;
+    border-top-right-radius:.8em ;
+}
+.terminal-btn::before, .terminal-btn::after, .terminal-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  display: block;
+}
+
+.terminal-btn {
+  background: #f6b73e;
+  position: relative;
+  margin-left: 38px;
+  top: 14px;
+}
+.terminal-btn::before, .terminal-btn::after {
+  content: " ";
+  position: absolute;
+}
+.terminal-btn::before {
+  background: #f55551;
+  margin-left: -20px;
+}
+.terminal-btn::after {
+  background: #32c146;
+  margin-left: 20px;
+}
+
+.terminal-code{
+    padding: 8px;
+}
+.terminal-code code span,
+#usertext{
+  font-family: 'Source Code Pro', monospace;
+}
+
+.terminal-code code:nth-child(1) span:nth-child(1){
+  color:#00bf00;
+}
+.terminal-code code:nth-child(1) span:nth-child(2){
+  color:#a40088;
+}
+.terminal-code code:nth-child(1) span:nth-child(3){
+  color:#bfbf00;
+}
+.terminal-code code:nth-child(1) span:nth-child(4){
+  color:#00bfa4;
+}
+
+.animate-box span:nth-child(1){
+  color: var(--terminal-money-text);
+}
+
+#animate-text{
+  color: #ff9494;
+}
+.animate-box span:nth-child(2){
+  color: var(--carat-color);
+}
+.typed-cursor.typed-cursor--blink{
+  color: var(--carat-color);
+}

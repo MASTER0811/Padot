@@ -1,0 +1,37 @@
+/* 
+    Fonts Name: "Poppins"
+    Fonts From: Google Fonts [https://fonts.google.com/specimen/Poppins]
+    Fonts Styles: [
+        Light 300,
+        Regular 400,
+        Medium 500,
+        SemiBold 600
+    ]
+    Fonts About: [About Poppins],
+                "Geometric sans serif typefaces have been a popular design tool ever since these actors took to the world’s stage. Poppins is one of the new comers to this long tradition. With support for the Devanagari and Latin writing systems, it is an internationalist take on the genre."
+                "Many of the Latin glyphs (such as the ampersand) are more constructed and rationalist than is typical. The Devanagari design is particularly new, and is the first ever Devanagari typeface with a range of weights in this genre. Just like the Latin, the Devanagari is based on pure geometry, particularly circles."
+                "Each letterform is nearly monolinear, with optical corrections applied to stroke joints where necessary to maintain an even typographic color. The Devanagari base character height and the Latin ascender height are equal; Latin capital letters are shorter than the Devanagari characters, and the Latin x-height is set rather high."
+                {"The Devanagari is designed by (Ninad Kale)."}
+                {"The Latin is by (Jonny Pinhorn)."}
+                {"To contribute, see https://github.com/itfoundry/poppins"}
+    Designers: [
+        {
+            Name: "Indian Type Foundry"(https://fonts.google.com/?query=Indian%20Type%20Foundry)
+            Designer about: "Indian Type Foundry (ITF) creates retail and custom multilingual fonts for print and digital media. Started in 2009 by Satya Rajpurohit and Peter Bil’ak, ITF works with designers from across the world. ITF fonts are used by clients ranging from tech giants like Apple, Google, and Sony, to various international brands."
+            Github: "http://github.com/itfoundry"
+            Twitter: "https://twitter.com/itfoundry"
+        }
+        {
+            Name: "Jonny Pinhorn"(https://fonts.google.com/?query=Jonny+Pinhorn)
+            Designer about: "After completing an MA in Type Design at the University of Reading, Jonny went on to design Karla for Google Fonts. Karla is a popular and quirky sans-serif typeface that supports both Latin and Tamil scripts. His continued fascination with India and Indian languages led him to ITF, where he worked for three years. Jonny continues to work exclusively on Indic scripts—including Shrikhand and Atithi most recently."
+            Github: "https://github.com/jonpinhorn"
+            Twitter: "https://twitter.com/jonpinhorn_type"
+        }
+    ]
+    License: {"These fonts are licensed under the (Open Font License)."}[https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL]
+            {"You can use them freely in your products & projects - print or digital, commercial or otherwise."}
+            {"This isn't legal advice, please consider consulting a lawyer and see the full license for all details."}
+    CSS rules to specify families: `font-family: 'Poppins', sans-serif;`
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');

@@ -1,0 +1,266 @@
+:root{
+    --black:#202020;
+    /* body */
+    --body-background:#edf2fa;
+
+    /* header */
+    --header-background:#ffffff;
+    --header-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --header-logo-color:#333333bd;
+        /* list a */
+        --list-a-tag-color:#5f6368;
+        --list-a-tag-background:#f6f6f6;
+        --list-a-hover-background:#f8f8f8;
+        --list-a-box-shadow: rgba(100, 100, 111, 0.4) 3px 12px 19px 0px;
+        --list-a-hover-box-shadow:0 0.25em 0 #c3c6d1;
+        --list-a-active-background:#f8f8f8;
+        --list-a-active-color:#202020;
+    --github-logo:#2d333b;
+    --sign-logo:#1f97ff;
+
+    /* radius */
+    --border-radius: 95% 4% 97% 5%/4% 94% 3% 95%;
+    --border-radius-hover: 4% 95% 6% 95%/95% 4% 92% 5%;
+
+    /* box-shadow */
+    --main-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --main-hover-box-shadow: rgba(100, 100, 111, 0.45) 0px 7px 29px 0px;
+}
+.web-dark-mode{
+    --black:#ffffff;
+    /* body */
+    --body-background:#252525;
+
+    /* header */
+    --header-background:#454545;
+    --header-shadow:rgba(225, 217, 209, 0.2) 0px 7px 29px 0px;
+    --header-logo-color:#ffffffbd;
+        /* list a */
+        --list-a-tag-color:#ffffff;
+        --list-a-tag-background:#606060;
+        --list-a-tag-hover-color:#333333;
+        --list-a-hover-background:#909090;
+        --list-a-hover-color:#ffffff;
+        --list-a-active-background:#707070;
+        --list-a-active-color:#efefef;
+    --github-logo:#728690;
+    --sign-logo:#4aabff;
+}
+
+/* website all */
+[pages]{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--body-background);
+    background-attachment: fixed;
+}
+[main-pages]{
+    background-image: radial-gradient(rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0) 40vw), radial-gradient(rgba(0, 128, 0, 0.3), rgba(0, 128, 0, 0) 40vw), radial-gradient(rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0) 40vw), radial-gradient(rgba(255, 255, 0, 0.3), rgba(255, 255, 0, 0) 40vw), radial-gradient(rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0) 40vw);
+    background-position: -40vw 14rem, 50% 10rem, 60vw 14rem, -10vw calc(14rem + 20vw), 30vw calc(14rem + 20vw);
+    background-size: 80vw 80vw;
+    background-repeat: no-repeat; 
+}
+
+/* website dark mode and light mode */
+/* [mode-moon]{
+
+} */
+/* [mode-sun]{
+    display: none;
+} */
+
+/* Header */
+header[header]{
+    background-color: var(--header-background);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 60px;
+
+    box-shadow: var(--header-shadow);
+
+    z-index: 10000;
+}
+header[header] div.text-logo span{
+    font-size: 26px;
+    font-weight: bolder;
+    color: var(--header-logo-color);
+    user-select: none;
+}
+nav[navItem] {
+    display: flex;
+}
+nav[navItem] a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 6.5px 15px;
+    margin: 0 3.8px;
+
+    background: var(--list-a-tag-background);
+
+    border-radius: var(--border-radius);
+
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--list-a-tag-color);
+
+    border: 2px solid transparent;
+
+    cursor: pointer;
+    user-select: none;
+    width: 100%;
+
+}
+nav[navItem] a:active{
+    transition: .05s;
+    border-color:#1a73e8;
+}
+nav[navItem] a:hover{
+    border-radius: var(--border-radius-hover);
+    background: var(--list-a-hover-background);
+    color: var(--list-a-hover-color);
+    box-shadow: rgba(100, 100, 25, 0.2) 0px 7px 29px 0px;
+}
+nav[navItem] a.active{
+    box-shadow: rgba(100, 100, 111, 0.4) 0px 1px 15px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: var(--border-radius-hover);
+    background: var(--list-a-active-background);
+    color: var(--list-a-active-color);
+}
+nav[navItem] a.active:hover{
+    border-radius: 999px;
+}
+nav[navItem] a:nth-child(1).active ion-icon{
+    color: #4285f4;
+}
+nav[navItem] a:nth-child(2).active ion-icon{
+    color: #4e66e7 ;
+}
+nav[navItem] a:nth-child(3).active ion-icon{
+    color: #846ca2 ;
+}
+nav[navItem] a:nth-child(4).active ion-icon{
+    color: #4a788c ;
+}
+nav[navItem] a ion-icon{
+    padding: 1.5px;
+    font-size: 15px;
+}
+
+nav[navItem] a:nth-child(1):hover ion-icon{
+    color: #4285f4;
+}
+
+nav[navItem] a:nth-child(2):hover ion-icon{
+    color: #4e66e7 ;
+}
+
+nav[navItem] a:nth-child(3):hover ion-icon{
+    color: #846ca2 ;
+}
+
+nav[navItem] a:nth-child(4):hover ion-icon{
+    color: #4a788c ;
+}
+nav[navItem] a:nth-child(5):hover ion-icon{
+    color: #daa139;
+    /* color: #2d333b; */
+}
+
+
+.option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 6px;
+    /* box-shadow: var(--main-box-shadow); */
+    border-radius: 10px;
+}
+.option:hover{
+    transition-delay: .15s;
+    /* box-shadow: var(--main-box-shadow); */
+}
+.option span{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 2.65rem;
+    line-height: 2.65rem;
+    width: 2.65rem;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 50%;
+    user-select: none;
+    box-shadow: var(--list-a-box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--list-a-tag-background);
+}
+.option span:hover{
+    box-shadow: var(--list-a-hover-box-shadow);
+}
+.option span:first-child{
+    display: none;
+    color: var(--black);
+}
+.option span:nth-child(2){
+    color: #f8aec6;
+}
+span[heart].active{
+    color: #ff0000;
+}
+.option span:nth-child(3){
+    color: var(--github-logo);
+}
+.option span:nth-child(4){
+    color: #698cb8;
+}
+.option span:nth-child(5){
+    display: none;
+    color: #f9d71c;
+}
+.option span:nth-child(6){
+    color: var(--sign-logo);
+}
+
+.option span:active{
+    transition: .1s;
+    transform: scale(1.06);
+}
+
+.xyposition{
+    position: absolute;
+    left: 50%;
+    bottom: 6%;
+    transform: translateX(-50%);
+}
+.xyposition{
+    display: flex;
+}
+.xyposition code{
+    width: 350px;
+    margin: 0 5px;
+}
+.xyposition code p{
+    font-size: 20px;
+    margin: 0 30px;
+    user-select: none;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+}
+.xyposition code p span{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+}
