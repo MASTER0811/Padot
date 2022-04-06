@@ -79,7 +79,7 @@ else if (localStorage.getItem("theme") == "dark") {
 
 
 githublinks.onclick = () =>{
-    window.location.replace("github.html")
+    window.location.replace("./github")
 }
 
 window.onscroll = () =>{
